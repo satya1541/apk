@@ -1,0 +1,96 @@
+#!/usr/bin/env bash
+
+npm install
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated gauge@3.0.2: This package is no longer supported.
+npm warn deprecated crypto@1.0.1: This package is no longer supported. It's now a built-in Node module. If you've depended on crypto, you should switch to the one that's built-in.
+npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+npm error code 1
+npm error path /Users/builder/clone/node_modules/canvas
+npm error command failed
+npm error command sh -c node-pre-gyp install --fallback-to-build --update-binary
+npm error Failed to execute '/usr/local/bin/node /usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js configure --fallback-to-build --update-binary --module=/Users/builder/clone/node_modules/canvas/build/Release/canvas.node --module_name=canvas --module_path=/Users/builder/clone/node_modules/canvas/build/Release --napi_version=9 --node_abi_napi=napi --napi_build_version=0 --node_napi_label=node-v115' (1)
+npm error node-pre-gyp info it worked if it ends with ok
+npm error node-pre-gyp info using node-pre-gyp@1.0.11
+npm error node-pre-gyp info using node@20.19.6 | darwin | arm64
+npm error node-pre-gyp http GET https://github.com/Automattic/node-canvas/releases/download/v2.11.2/canvas-v2.11.2-node-v115-darwin-unknown-arm64.tar.gz
+npm error node-pre-gyp ERR! install response status 404 Not Found on https://github.com/Automattic/node-canvas/releases/download/v2.11.2/canvas-v2.11.2-node-v115-darwin-unknown-arm64.tar.gz 
+npm error node-pre-gyp WARN Pre-built binaries not installable for canvas@2.11.2 and node@20.19.6 (node-v115 ABI, unknown) (falling back to source compile with node-gyp) 
+npm error node-pre-gyp WARN Hit error response status 404 Not Found on https://github.com/Automattic/node-canvas/releases/download/v2.11.2/canvas-v2.11.2-node-v115-darwin-unknown-arm64.tar.gz 
+npm error gyp info it worked if it ends with ok
+npm error gyp info using node-gyp@10.1.0
+npm error gyp info using node@20.19.6 | darwin | arm64
+npm error gyp info ok 
+npm error gyp info it worked if it ends with ok
+npm error gyp info using node-gyp@10.1.0
+npm error gyp info using node@20.19.6 | darwin | arm64
+npm error gyp info find Python using Python version 3.12.7 found at "/Users/builder/.pyenv/versions/3.12.7/bin/python3"
+npm error gyp http GET https://nodejs.org/download/release/v20.19.6/node-v20.19.6-headers.tar.gz
+npm error gyp http 200 https://nodejs.org/download/release/v20.19.6/node-v20.19.6-headers.tar.gz
+npm error gyp http GET https://nodejs.org/download/release/v20.19.6/SHASUMS256.txt
+npm error gyp http 200 https://nodejs.org/download/release/v20.19.6/SHASUMS256.txt
+npm error gyp info spawn /Users/builder/.pyenv/versions/3.12.7/bin/python3
+npm error gyp info spawn args [
+npm error gyp info spawn args '/usr/local/lib/node_modules/npm/node_modules/node-gyp/gyp/gyp_main.py',
+npm error gyp info spawn args 'binding.gyp',
+npm error gyp info spawn args '-f',
+npm error gyp info spawn args 'make',
+npm error gyp info spawn args '-I',
+npm error gyp info spawn args '/Users/builder/clone/node_modules/canvas/build/config.gypi',
+npm error gyp info spawn args '-I',
+npm error gyp info spawn args '/usr/local/lib/node_modules/npm/node_modules/node-gyp/addon.gypi',
+npm error gyp info spawn args '-I',
+npm error gyp info spawn args '/Users/builder/Library/Caches/node-gyp/20.19.6/include/node/common.gypi',
+npm error gyp info spawn args '-Dlibrary=shared_library',
+npm error gyp info spawn args '-Dvisibility=default',
+npm error gyp info spawn args '-Dnode_root_dir=/Users/builder/Library/Caches/node-gyp/20.19.6',
+npm error gyp info spawn args '-Dnode_gyp_dir=/usr/local/lib/node_modules/npm/node_modules/node-gyp',
+npm error gyp info spawn args '-Dnode_lib_file=/Users/builder/Library/Caches/node-gyp/20.19.6/<(target_arch)/node.lib',
+npm error gyp info spawn args '-Dmodule_root_dir=/Users/builder/clone/node_modules/canvas',
+npm error gyp info spawn args '-Dnode_engine=v8',
+npm error gyp info spawn args '--depth=.',
+npm error gyp info spawn args '--no-parallel',
+npm error gyp info spawn args '--generator-output',
+npm error gyp info spawn args 'build',
+npm error gyp info spawn args '-Goutput_dir=.'
+npm error gyp info spawn args ]
+npm error Package pangocairo was not found in the pkg-config search path.
+npm error Perhaps you should add the directory containing `pangocairo.pc'
+npm error to the PKG_CONFIG_PATH environment variable
+npm error Package 'pangocairo' not found
+npm error gyp: Call to 'pkg-config pangocairo --libs' returned exit status 1 while in binding.gyp. while trying to load binding.gyp
+npm error gyp ERR! configure error 
+npm error gyp ERR! stack Error: `gyp` failed with exit code: 1
+npm error gyp ERR! stack at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/node-gyp/lib/configure.js:297:18)
+npm error gyp ERR! stack at ChildProcess.emit (node:events:524:28)
+npm error gyp ERR! stack at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+npm error gyp ERR! System Darwin 25.1.0
+npm error gyp ERR! command "/usr/local/bin/node" "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "configure" "--fallback-to-build" "--update-binary" "--module=/Users/builder/clone/node_modules/canvas/build/Release/canvas.node" "--module_name=canvas" "--module_path=/Users/builder/clone/node_modules/canvas/build/Release" "--napi_version=9" "--node_abi_napi=napi" "--napi_build_version=0" "--node_napi_label=node-v115"
+npm error gyp ERR! cwd /Users/builder/clone/node_modules/canvas
+npm error gyp ERR! node -v v20.19.6
+npm error gyp ERR! node-gyp -v v10.1.0
+npm error gyp ERR! not ok 
+npm error node-pre-gyp ERR! build error 
+npm error node-pre-gyp ERR! stack Error: Failed to execute '/usr/local/bin/node /usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js configure --fallback-to-build --update-binary --module=/Users/builder/clone/node_modules/canvas/build/Release/canvas.node --module_name=canvas --module_path=/Users/builder/clone/node_modules/canvas/build/Release --napi_version=9 --node_abi_napi=napi --napi_build_version=0 --node_napi_label=node-v115' (1)
+npm error node-pre-gyp ERR! stack     at ChildProcess.<anonymous> (/Users/builder/clone/node_modules/@mapbox/node-pre-gyp/lib/util/compile.js:89:23)
+npm error node-pre-gyp ERR! stack     at ChildProcess.emit (node:events:524:28)
+npm error node-pre-gyp ERR! stack     at maybeClose (node:internal/child_process:1104:16)
+npm error node-pre-gyp ERR! stack     at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+npm error node-pre-gyp ERR! System Darwin 25.1.0
+npm error node-pre-gyp ERR! command "/usr/local/bin/node" "/Users/builder/clone/node_modules/.bin/node-pre-gyp" "install" "--fallback-to-build" "--update-binary"
+npm error node-pre-gyp ERR! cwd /Users/builder/clone/node_modules/canvas
+npm error node-pre-gyp ERR! node -v v20.19.6
+npm error node-pre-gyp ERR! node-pre-gyp -v v1.0.11
+npm error node-pre-gyp ERR! not ok
+npm error A complete log of this run can be found in: /Users/builder/.npm/_logs/2025-12-11T10_43_41_349Z-debug-0.log
+
+
+Build failed :|
+Step 2 script `Install dependencies` exited with status code 1
